@@ -59,9 +59,9 @@ main {
 }
 
 .topbar {
-  width: 100%;
   display: flex;
   align-items: center;
+ 
   
   gap: 16px;
   padding: 20px 4vw 20px 2vw;
@@ -103,8 +103,8 @@ h3,
   flex-wrap: nowrap;
   overflow-x: auto;
   white-space: nowrap;
-  justify-content: center;   
-  flex: 1;                  
+
+  margin-left: auto;   /* 👈 THIS pushes it to right */
 }
 .nav-link {
   color: #ffffff;
