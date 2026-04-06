@@ -97,11 +97,6 @@ h3,
   flex-shrink: 0;
 }
 
-.nav-links {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
 
 .nav-links {
   display: flex;
