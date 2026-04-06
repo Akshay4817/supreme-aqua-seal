@@ -103,11 +103,20 @@ h3,
   flex-wrap: wrap;
 }
 
+.nav-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;          
+  overflow-x: auto;           
+  white-space: nowrap;        
+}
+
+.nav-links::-webkit-scrollbar {
+  display: none;
+}
+
 .nav-link {
-  color: #ffffff;
-  padding: 10px 14px;
-  border-radius: 999px;
-  transition: background 180ms ease, color 180ms ease;
+  flex: 0 0 auto;            
 }
 
 .nav-link.active {
@@ -1763,10 +1772,7 @@ h3,
     padding: 28px 20px 36px;
   }
 
-  .nav-link {
-    width: 100%;
-    text-align: center;
-  }
+ 
 
   .carousel-slide {
     height: min(360px, calc(100vh - 88px));
@@ -1926,4 +1932,21 @@ h3,
   .brand-logo {
     max-height: 94px;
   }
+}
+@media (max-width: 768px) {
+  .contact-layout {
+    grid-template-columns: 1fr;   /* stack properly */
+  }
+}
+
+.contact-form-shell {
+  width: 100%;
+  min-width: 0;   /* prevents overflow issues */
+}
+
+.form-field input,
+.form-field textarea,
+.form-field select {
+  width: 100%;
+  box-sizing: border-box;
 }
