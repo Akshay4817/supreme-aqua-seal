@@ -4,8 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "npm run dev --workspace client",
-    "build": "npm run build --workspace client"
+    "build": "cd client && npm install && npm run build"
   },
   "dependencies": {
     "nodemailer": "^8.0.4"
