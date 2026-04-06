@@ -61,8 +61,8 @@ main {
 .topbar {
   width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  
   gap: 16px;
   padding: 20px 4vw 20px 2vw;
   background: #142d4c;
@@ -100,10 +100,11 @@ h3,
 .nav-links {
   display: flex;
   gap: 10px;
-  flex-wrap: nowrap;        /* IMPORTANT */
-  overflow-x: auto;         /* IMPORTANT */
-  white-space: nowrap;      /* IMPORTANT */
-  width: 100%;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+  justify-content: center;   
+  flex: 1;                  
 }
 .nav-link {
   color: #ffffff;
