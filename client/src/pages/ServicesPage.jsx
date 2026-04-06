@@ -30,7 +30,7 @@ function ServicesPage() {
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
-              ) : null}
+              ) : null} 
             </div>
           </article>
         ))}
